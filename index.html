@@ -1,55 +1,59 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" type="image/png" href="image/favicon.ico">
-    <title>Sakshi <3 Em</title>	    
-    <link type="text/css" rel="stylesheet" href="./renxi/default.css">
-    <script type="text/javascript" src="./renxi/jquery.min.js"></script>
-    <script type="text/javascript" src="./renxi/jscex.min.js"></script>
-    <script type="text/javascript" src="./renxi/jscex-parser.js"></script>
-    <script type="text/javascript" src="./renxi/jscex-jit.js"></script>
-    <script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
-    <script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
-    <script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
-    <script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
-    <style type="text/css">
-    <!--
-    .STYLE1 {color: #666666}
-    -->
-    </style>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="icon" type="image/png" href="image/favicon.ico">
+		<title>Anh <3 Em</title>	    
+        <link type="text/css" rel="stylesheet" href="./renxi/default.css">
+		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+	    <style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+        </style>
 </head>
-<body>
-    <audio autoplay="autoplay">
-        <source src="I-Do-911.mp3" type="audio/mp3" />
-    </audio>  
-    <div id="main">
-        <div id="error">Your browser is not supported. Please use (<a href="http://www.google.cn/chrome">Chrome</a>) or (<a href="http://firefox.com/download/">Firefox</a>)</div>
-        <div id="wrap">
-            <div id="text">
-                <div id="code">
-                    <font color="#0000FF">
-                        <span class="say">happy birthday dear,</span><br>                                         
-              
-                        <span class="say">You !</span><br>
-                        <span class="say">sabd khatam ho gaye hai</span><br>
-                        <span class="say">..."bhagwan tumhe hamesha khush rakhe"</span><br>
-                       
-                       
-                        <span 
-                    </font>
+    <body>
+			<audio autoplay="autopaly">
+					<source src="music/I-Do-911.mp3" type="audio/mp3" />
+			</audio>  
+        <div id="main">
+            <div id="error">Trình duyệt của bạn không được hỗ trợ. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
+             <div id="wrap">
+                <div id="text">
+			        <div id="code">
+			      <font color="#0000FF"><span class="say">Chào em yêu,</span><br>
+						<span class="say"> </span><br>
+						<span class="say">Em là người con gái anh yêu nhất :)</span><br>
+						<span class="say">Em xinh đẹp nhất !</span><br>
+						<span class="say">Em đáng yêu nhất !</span><br>
+						<span class="say">Em cũng yêu anh nhất !</span><br>
+						<span class="say">Em là một điều may mắn trong cuộc sống của anh</span><br>
+						<span class="say">..."Có em, anh sẽ chẳng cần điều gì khác em"</span><br>
+						<span class="say">Yêu em cho đến khi nào anh không còn tồn tại <3</span><br>
+						<span class="say">Hãy cứ tin em nhé. 'Ta sẽ có một chuyến đi thật dài và đích đến là hôn lễ' :*</span><br>
+						<span class="say"> </span><br>
+                        <span class="say"><span class="space"></span> -- Yêu em thật nhiều --</span>
+			  </font></p>
+      </div>
                 </div>
+                <div id="clock-box">
+                    <span class="STYLE1"></span><font color="#FF0000">Anh <3 Em</font>
+<span class="STYLE1"> Time of love...</span>
+                  <div id="clock"></div>
+              </div>
+                <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <div id="clock-box">
-                <span class="STYLE1"></span>
-                <font color="#FF0000">I <3 You</font>
-                <span class="STYLE1"> Time of 👁👁...</span>
-                <div id="clock"></div>
-            </div>
-            <canvas id="canvas" width="1100" height="680"></canvas>
+            
         </div>
-    </div>
+    
+    <script>
+    </script>
 
     <script>
     (function(){
@@ -57,8 +61,7 @@
 		
         if (!canvas[0].getContext) {
             $("#error").show();
-            return false;        
-        }
+            return false;        }
 
         var width = canvas.width();
         var height = canvas.height();        
@@ -101,7 +104,7 @@
         }
 
         var tree = new Tree(canvas[0], width, height, opts);
-         var seed = tree.seed;
+        var seed = tree.seed;
         var foot = tree.footer;
         var hold = 1;
 
